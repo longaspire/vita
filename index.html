@@ -1,60 +1,115 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Vita by longaspire</title>
+    <title>Vita Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Vita</h1>
-      <h2 class="project-tagline">A Versatile Toolkit for Generating Indoor Mobility Data for Real-World Buildings</h2>
-      <a href="https://github.com/longaspire/vita" class="btn">View on GitHub</a>
-      <a href="https://github.com/longaspire/vita/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/longaspire/vita/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+</head>
+<body>
+<section class="page-header">
+    <h1 class="project-name">Vita</h1>
+    <h2 class="project-tagline">A Versatile Toolkit for Generating Indoor Mobility Data for Real-World Buildings</h2>
+</section>
 
-    <section class="main-content">
-      <p><img src="http://www.uimaker.com/uploads/allimg/20140723/1406082728129443.png" alt="GUI"></p>
+<section class="main-content">
 
-<h3>
-<a id="welcome-to-vita" class="anchor" href="#welcome-to-vita" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to <strong><em>Vita</em></strong>.</h3>
+    <!--<p><img src="http://www.uimaker.com/uploads/allimg/20140723/1406082728129443.png" alt="GUI"></p>-->
+    <div style="width:800px;padding:0;margin:auto; display:flex;justify-content:center;">
+        <iframe width="800"
+                height="450"
+                src="https://www.youtube.com/embed/jm88ZodpyPc"
+                frameborder="0"
+                allowfullscreen></iframe>
+    </div>
+    <br/>
+    <p style="text-align:right; margin:0; font-size: 0.9rem">
+        <a style="color:#888888" target="_blank"
+           href="http://www.tudou.com/programs/view/html5embed.action?type=0&code=NnpQO_3Rz8k&lcode=&resourceId=379281148_06_05_99">&rarr; view this
+            video on tudou.com (Adobe Flash Plugin required for Safari users)</a></p>
+    <h3>
+        <a id="welcome-to-vita" class="anchor" href="#welcome-to-vita" aria-hidden="true"><span
+                class="octicon octicon-link"></span></a>Welcome to <strong><em>Vita</em></strong>.</h3>
 
-<p>With the proliferation of various urban wireless network infrastructures, data analytics relying on users' indoor mobility behavior has emerged as a promising research frontier. However, the database community is missing a synthetic data generator, which analysts could use to study indoor space algorithms. Such generator is needed for two reasons: (1) It can be used to simulate high volumes of mobility data to evaluate location-dependent queries/algorithms. (2) It can provide the additional "ground truth" for the synthetic mobility models generated in (1), given the discrete nature of simulated mobility data.</p>
+    <p>With the proliferation of indoor positioning systems, analytics on users' indoor mobility data has emerged as a promising research frontier. However, the database community is missing a synthetic data generator that analysts could use to study algorithms assuming different indoor positioning technologies. Such a generator is needed for two reasons: (1) It can be used to simulate high volumes of indoor mobility data to evaluate location-dependent queries/algorithms. (2) It can provide the additional "ground truth" for the synthetic mobility data generated in (1) in spite of the discrete nature of the simulated data, which is useful for effectiveness studies in analytics.
+    </p>
+    <p>We demonstrate a generic, user-configurable toolkit for generating different types of indoor mobility data for real-world buildings. Our prototype generates the desired data in a three-layer pipeline: 1) The Infrastructure Layer accepts industry-standard digital building information (DBI) files to generate the host indoor environment, allowing for users to configure the generation of a variety of positioning devices, such as Wi-Fi, Bluetooth, RFID etc. 2) The Moving Object Layer offers the functionality of defining a set of objects or trajectories, with configurable indoor moving patterns, distribution models as well as sampling frequencies. 3) The Positioning Layer generates synthetic signal strength measurements known as raw RSSI measurements according to the positioning device data and trajectory data generated at relevant layers. It also generates different types of indoor positioning data through the customization of all typical indoor positioning methods on the raw RSSI data.
+    </p>
+    <p>Vita is characterized by several desirable features:
+    <ul>
+        <li>Vita accepts industry-standard DBI files and uses real-world (multi-floor) buildings with semantic attributes as the host environment for data generation.
+        </li>
+        <li>Vita offers a set of indoor moving patterns and distribution models for users, making its output---indoor moving objects and their trajectory data---highly configurable.
+        </li>
+        <li>Vita allows users to tune the sampling frequency of generating the trajectories such that the valuable "ground truth" movements are preserved to an arbitrarily detailed degree.
+        </li>
+        <li>Vita can generate indoor positioning data according to the most typical indoor positioning methods.</li>
+    </ul>
 
-<p>We demonstrates a generic, user-configurable toolkit for generating different types of indoor mobility data for real-world buildings. Our prototype generates the desired data in a three-layer pipeline: 1) The <em>Infrastructure Layer</em> accepts
-industry-standard DBI files to generate the host indoor environment, allowing for users to configure the generation of a variety of positioning devices, such as Wi-Fi, Bluetooth, RFID etc. 2) The <em>Moving Object Layer</em> offers the functionality of defining a set of objects or trajectories, with configurable indoor moving patterns, distribution models as well as sampling frequencies. 3) The <em>Positioning Layer</em> generates raw RSSI measurements according to the positioning device data and trajectory
-data generated at relevant layers. It also generates different types of indoor positioning data through the customization of all typical indoor positioning methods on the raw RSSI data.</p>
+    <h3>
+        <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span
+                class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+    <ul>
+        <li><a href="http://db.zju.edu.cn/s/people_detail?id=105" target="_blank">Huan Li</a>, Zhejiang University,
+            China
+        </li>
+        <li><a href="http://people.cs.aau.dk/~luhua/" target="_blank">Hua Lu</a>, Aalborg University, Denmark</li>
+        <li><a href="http://db.zju.edu.cn/s/people_detail?id=177" target="_blank">Xin Chen</a>, Zhejiang University,
+            China
+        </li>
+        <li><a href="http://db.zju.edu.cn/s/people_detail?id=1" target="_blank">Gang Chen</a>, Zhejiang University,
+            China
+        </li>
+        <li><a href="http://db.zju.edu.cn/s/people-2/ke-chen" target="_blank">Ke Chen</a>, Zhejiang University, China
+        </li>
+        <li><a href="http://db.zju.edu.cn/s/people-2/lidan-shou" target="_blank">Lidan Shou</a>, Zhejiang University,
+            China
+        </li>
+    </ul>
 
-<ul>
-<li>Huan Li, Zhejiang University, China</li>
-<li>Hua Lu, Aalborg University, Denmark</li>
-<li>Xin Chen, Zhejiang University, China</li>
-<li>Gang Chen, Zhejiang University, China</li>
-<li>Ke Chen, Zhejiang University, China</li>
-<li>Lidan Shou, Zhejiang University, China</li>
-</ul>
+    The authors would like to give thanks to Xinyuan Luo, Feichao Shi, Xinyi Wei for their valuable advices to this demo.
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+    <h3>
+        <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span
+                class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Email Address: <a href="mailto:lihuancs@zju.edu.cn">lihuancs@zju.edu.cn</a></p>
+    <p>Email Address: <a href="mailto:lihuancs@zju.edu.cn">lihuancs@zju.edu.cn</a></p>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/longaspire/vita">Vita</a> is maintained by <a href="https://github.com/longaspire">longaspire</a>.</span>
+    <p><em>Vita is designed and implemented in an extensible way for easy integration of more advanced features in the future. For example, it allows for using more complicated movement generation processes like a crowd simulation model. Also, the entire prototype will be open source for free extensions and customizations in the near future. You are welcome to contribute to Vita, to make it
+        better</em> :) </p>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+    <footer class="site-footer">
+        <!--<span class="site-footer-owner"><a href="https://github.com/longaspire/vita">Vita</a> is maintained by <a-->
+        <!--href="https://github.com/longaspire">longaspire</a>.</span>-->
+        <span class="site-footer-credits">
+            Copyright 2016 Database Laboratory of Zhejiang University. All Rights Reserved.
+            <br/>
+            This page was generated with <a href="https://github.com/jasonlong/cayman-theme" target="_blank">Cayman
+            theme</a>
+            written by <a href="https://twitter.com/jasonlong" target="_blank">Jason Long</a>.</span>
+    </footer>
+</section>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    </section>
+    ga('create', 'UA-72372362-1', 'auto');
+    ga('send', 'pageview');
 
-  
-  </body>
-</html>
+</script>
+</body>
+
+
