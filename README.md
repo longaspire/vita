@@ -9,19 +9,19 @@ http://longaspire.github.io/vita/
  
 directory tree:
 
-- conf
+-- conf
   <the properties files for configuration>
-- docs
+-- docs
   <the documentation files>
-- lib
+-- lib
   <the depedencies files>
-  -- JUNG
-- sql
+  ---- JUNG
+-- sql
   <the sql files for back-end database setup>
-- src
+-- src
   <the source code>
-- test-files
+-- test-files
   <the IFC files for testing>
-  -- Fib.13
-  -- SLV300
-  -- Ulzon
+  ---- Fib.13
+  ---- SLV300
+  ---- Ulzon
