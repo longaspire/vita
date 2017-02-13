@@ -11,24 +11,32 @@ directory tree:
 
 -- conf
   
-  //the properties files for configuration
+  `the properties files for configuration`
   
 -- docs
 
-  //the documentation files
+  `the documentation files`
   
 -- lib
-  //the depedencies files
+
+  `the depedencies files`
+  
   ---- JUNG
   
 -- sql
-  //the sql files for back-end database setup
+
+  `the sql files for back-end database setup`
   
 -- src
-  //the source code
+  
+  `the source code`
   
 -- test-files
-  //the IFC files for testing
+  
+  `the IFC files for testing`
+  
   ---- Fib.13
+  
   ---- SLV300
+  
   ---- Ulzon
