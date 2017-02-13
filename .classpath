@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="database/ControlPanel.java|database/IndoorMap.java|database/MooveUI.java|database/Drawer.java|controller/Authorization.java" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/postgresql-9.2-1000.jdbc4.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/collections-generic-4.01.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/colt-1.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/concurrent-1.3.4.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/j3d-core-1.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/jung-3d-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/jung-3d-demos-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/jung-algorithms-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/jung-api-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/jung-graph-impl-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/jung-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/jung-jai-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/jung-jai-samples-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/jung-samples-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/jung-visualization-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/vecmath-1.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/JUNG/wstx-asl-3.2.6.jar"/>
+	<classpathentry kind="lib" path="lib/postgis-jdbc-2.0.2SVN.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OPENIFCTOOLS"/>
+	<classpathentry kind="lib" path="lib/openifctools.com.openifcjavatoolbox_1.0.1_20111129.jar"/>
+	<classpathentry kind="lib" path="lib/ajt-2.9.jar"/>
+	<classpathentry kind="lib" path="lib/commons-math-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/Jama-1.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/libsvm.jar"/>
+	<classpathentry kind="lib" path="lib/diva-0.3.jar"/>
+	<classpathentry kind="lib" path="lib/weka.jar"/>
+	<classpathentry kind="lib" path="lib/prtree.jar"/>
+	<classpathentry kind="lib" path="lib/javaml-0.1.7.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
